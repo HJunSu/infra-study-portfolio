@@ -1,1 +1,20 @@
+# 3. `router_config.txt`
 
+라우터 명령어만 따로 저장한다.
+
+```txt
+enable
+configure terminal
+
+interface gigabitEthernet 0/0
+ip address 192.168.10.1 255.255.255.0
+no shutdown
+exit
+
+interface gigabitEthernet 0/1
+ip address 192.168.20.1 255.255.255.0
+no shutdown
+exit
+
+end
+write memory
